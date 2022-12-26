@@ -1,9 +1,4 @@
 # movie_app
-
-# 데이터 레퍼런스
-
-https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-movies-dataset?resource=download&select=Best+Movies+Netflix.csv
-
 # 설명
 # 진행과정
 
@@ -36,3 +31,7 @@ https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-
   - putty로 ec2에 접속하여 원격으로 작업하여 파이썬 환경을 구축하여 streamlit를 서버에서도 실행할 수 있게 하였습니다.
   - streamlit 웹대시보드를 서버 연결이 끊겨도 접속이 가능하게 하였습니다.
   - github 레포지토리에 있던 인공지능파일인 pkl파일을 ec2로 pull하여 서버에서도 인공지능이 실행될 수 있게 하였습니다. 
+
+# 데이터 레퍼런스
+
+https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-movies-dataset?resource=download&select=Best+Movies+Netflix.csv
