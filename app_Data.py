@@ -23,10 +23,12 @@ def run_data_app():
         df_min1=df.loc[df['SCORE']==df['SCORE'].min(),]
         
         st.text('평점 최대')
-        st.text(df_max1['TITLE'])
+        for i in range(0,len(df_max1)):
+            st.text(df_max1['TITLE'].values[i])
         st.dataframe(df_max1)
         st.text('평점 최소')
-        st.text(df_min1['TITLE'])
+        for i in range(0,len(df_min1)):
+            st.text(df_min1['TITLE'].values[i])
         st.dataframe(df_min1)
 
     
@@ -35,10 +37,12 @@ def run_data_app():
         df_min2=df.loc[df['NUMBER_OF_VOTES']==df['NUMBER_OF_VOTES'].min(),]
         
         st.text('투표수 최대')
-        st.text(df_max2['TITLE'])
+        for i in range(0,len(df_max2)):
+            st.text(df_max2['TITLE'].values[i])
         st.dataframe(df_max2)
         st.text('투표수 최소')
-        st.text(df_min2['TITLE'])
+        for i in range(0,len(df_min2)):
+            st.text(df_min2['TITLE'].values[i])
         st.dataframe(df_min2)
 
     elif selected_column == '재생시간(분)':
@@ -46,10 +50,12 @@ def run_data_app():
         df_min3=df.loc[df['DURATION']==df['DURATION'].min(),]
 
         st.text('재생시간 최대')
-        st.text(df_max3['TITLE'])
+        for i in range(0,len(df_max3)):
+            st.text(df_max3['TITLE'].values[i])
         st.dataframe(df_max3)
         st.text('재생시간 최소')
-        st.text(df_min3['TITLE'])
+        for i in range(0,len(df_min3)):
+            st.text(df_min3['TITLE'].values[i])
         st.dataframe(df_min3)
     
 

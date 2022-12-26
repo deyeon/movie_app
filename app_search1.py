@@ -18,6 +18,10 @@ def run_search_app1():
 
     if len(movie_word)!= 0:
         st.dataframe(df_movie)
+        s_s = st.checkbox("제목 표시")
+        if s_s:
+            for i in range(0,len(df_movie)):
+                st.text(df_movie['TITLE'].values[i])
 
     else:
         st.info("영화를 검색해보세요")
