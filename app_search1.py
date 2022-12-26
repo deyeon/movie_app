@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
-def run_search_app():
+def run_search_app1():
     df=pd.read_csv('data/Best Movies Netflix.csv')
     df.set_index('index',inplace=True)
     df.isna().sum()

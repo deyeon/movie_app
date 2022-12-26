@@ -41,24 +41,37 @@ def run_chart_app():
 
     
     
-    st.text("평점별로 데이터가 얼마나 분포되어 있는지 나타낸 파이차트입니다.")
-    fig4 = px.pie(df2,names=df2['SCORE'].value_counts().index,values=df2['SCORE'].value_counts(),title='파이차트')
-    st.plotly_chart(fig4)
+    st.text("컬럼별로 데이터가 얼마나 분포되어 있는지 나타낸 파이차트입니다.")
+    df3=df.loc[:,['SCORE','MAIN_GENRE','MAIN_PRODUCTION']]
+    status2 =st.radio('설정을 선택하세요',['평점(10만점)','장르','제작사 국가'])
+    
+    if status2== '평점(10만점)' :
+        fig4 = px.pie(df3,names=df3['SCORE'].value_counts().index,values=df3['SCORE'].value_counts(),title='평점별 파이차트')
+        st.plotly_chart(fig4)
+    
+    elif status2== '장르':
+        fig5 = px.pie(df3,names=df3['MAIN_GENRE'].value_counts().index,values=df3['MAIN_GENRE'].value_counts(),title='장르별 파이차트')
+        st.plotly_chart(fig5)
+
+    elif status2== '제작사 국가':
+        fig6 = px.pie(df3,names=df3['MAIN_PRODUCTION'].value_counts().head(10).index,values=df3['MAIN_PRODUCTION'].value_counts().head(10),title='제작사 국가별 파이차트')
+        st.plotly_chart(fig6)
+
 
     st.subheader('상관관계 분석')
     st.text("각 컬럼간의 상관관계를 분석하였습니다.")
     st.text("컬럼을 선택하여 상관분석을 할수 있습니다.")
 
-    df3 = df.loc[:,['RELEASE_YEAR', 'SCORE', 'NUMBER_OF_VOTES', 'DURATION']]
-    c_list = df3.columns
+    df4 = df.loc[:,['RELEASE_YEAR', 'SCORE', 'NUMBER_OF_VOTES', 'DURATION']]
+    c_list = df4.columns
     selected_list=st.multiselect('상관분석을 하고싶은 컬럼을 선택하세요', c_list)
 
     if len(selected_list) >= 2:
             df_corr=df[selected_list].corr()
-            fig5 = plt.figure()
+            fig7 = plt.figure()
             sb.heatmap(data=df_corr,annot=True,fmt='.2f',cmap='coolwarm',
             vmin = -1,vmax=1,linewidths=0.5)
-            st.pyplot(fig5)
+            st.pyplot(fig7)
 
 
 
