@@ -18,9 +18,9 @@
 ## 2. visual studio code 에서 작업
 
   - visual studio code에서 작업하여 streamlit라이브러리로 웹대시보드를 로컬에서 생성하여 작업하였습니다.
-  - 데이터를 설명하는 과정에서 포켓몬 공식사이트에서 이미지를 연결하여 어떤데이터에 어떤 포켓몬이 있는지 알수 있게 하였습니다.
+  - 영화를 제목별,조건별로 검색할수 있게 작업하였습니다.
   - 기존 plt차트에서 발전된 plotly차트를 사용하여 사용하는 유저가 차트에 데이터를 마우스만 올리면 볼 수 있게 하였습니다.
-  - 상관분석을 통해 각 컬럼간에 데이터는 어떤 상관관계가 있는지 분석해보았고 분석 결과 상관관계가 높지 않아서 인공지능은 사용하지 않았습니다.
+  - 상관분석을 통해 각 컬럼간에 데이터는 어떤 상관관계가 있는지 분석해보았고 분석 결과 데이터 별로 상관관계가 높지 않아서 인공지능은 사용하지 않았습니다.
 
 ## 3. github에서 작업 
   
@@ -41,6 +41,8 @@
   - streamlit sidebar에서 search항목을 클릭하면 제목별,조건별로 검색할수 있게 라디오버튼을 만들려 했으나 sidebar 바깥으로 만들어져서
     streamlit 홈페이지에서 sidebar를 함수사이 입력하면된다는 점을 이해하고 라디오버튼을 sidebar에 정확히 적용하였습니다. 
 
+# 스크린샷
+   
 # 데이터 레퍼런스
 
 https://www.kaggle.com/datasets/thedevastator/the-ultimate-netflix-tv-shows-and-movies-dataset?resource=download&select=Best+Movies+Netflix.csv
