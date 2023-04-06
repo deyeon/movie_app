@@ -42,6 +42,15 @@
     streamlit 홈페이지에서 sidebar를 함수사이 입력하면된다는 점을 이해하고 라디오버튼을 sidebar에 정확히 적용하였습니다. 
 
 # 스크린샷
+![image](https://user-images.githubusercontent.com/120348521/230259152-c5215b0b-bfc0-4968-bbd1-f69124a2cafa.png)
+
+![image](https://user-images.githubusercontent.com/120348521/230259253-39aba154-4f7d-4c2e-805f-d7258b8a002a.png)
+
+![image](https://user-images.githubusercontent.com/120348521/230259332-961a82ba-a6c2-466f-8fac-f0ea103c4663.png)
+
+![image](https://user-images.githubusercontent.com/120348521/230259405-d8234d4f-c5b5-46d0-82b4-40798b168b8b.png)
+
+![image](https://user-images.githubusercontent.com/120348521/230259529-63dfb49a-0436-4bf3-a627-265fa7d346b2.png)
    
 # 데이터 레퍼런스
 
